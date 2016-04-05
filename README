@@ -1,0 +1,43 @@
+A part:
+
+creating ifstream object, inFile, to read "file.in";
+if inFile cannnot be opened, cerr the message and leave the program;
+read in the first number in file to be cowNumber, and check if 5<cowNumber<10000;
+push data of cowWeight into vector weight;
+using sort() to sort the data in vector;
+add the five largest number to topFiveWeight;
+print the number of topFiveWeight;
+
+B part:
+
+size=1000:
+sort(): 0 seconds
+v1/v2 are different.
+insertion_sort(): 0.01 seconds
+v1/v2 are the same.
+
+size=10000:
+sort(): 0 seconds
+v1/v2 are different.
+insertion_sort(): 1.29 seconds
+v1/v2 are the same.
+
+size=100000:
+sort(): 0.04 seconds
+v1/v2 are different.
+insertion_sort(): 128.43 seconds
+v1/v2 are the same.
+
+size=1000000:
+sort(): 0.51 seconds
+v1/v2 are different.
+insertion_sort(): 12819 seconds
+v1/v2 are the same.
+
+
+suppose clock cycle time = 1GHz, and cycles per instruction = 10
+CPU time=clock cycle time * cycles per instruction * instruction count
+the instruction count for sort() roughly = n*log n (n=size)
+the instruction count for insertion_sort() roughly = n^2
+according to the results above, CPU time is almost the same as predicting
+that is, O(n*log n) is smaller than O(n^2)
