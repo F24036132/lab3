@@ -40,4 +40,4 @@ CPU time=clock cycle time * cycles per instruction * instruction count
 the instruction count for sort() roughly = n*log n (n=size)
 the instruction count for insertion_sort() roughly = n^2
 according to the results above, CPU time is almost the same as predicting
-that is, O(n*log n) is smaller than O(n^2)
+that is, time complexity O(n*log n) is smaller than O(n^2)
